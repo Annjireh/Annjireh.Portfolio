@@ -1,0 +1,18 @@
+# Ignorer les fichiers temporaires ou d'éditeur
+*.swp
+.DS_Store
+
+# Ignorer les répertoires générés par les outils
+node_modules/
+dist/
+
+# Ignorer les fichiers d'environnement
+.env
+
+# Ne pas ignorer les fichiers CSS, JS, images
+!*.css
+!*.js
+!*.jpg
+!*.jpeg
+!*.png
+!*.gif
