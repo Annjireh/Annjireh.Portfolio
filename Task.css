@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(todolist.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent pour le contenu */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    background: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px; /* Ajoute de l'espace entre le texte de la tâche et le bouton */
+}
+
+li button:hover {
+    background: #c82333;
+}
+
+/* Alignement parfait des cases à cocher et du texte */
+li input[type="checkbox"] {
+    margin-right: 15px; /* Ajoute de l'espace entre la case et le texte */
+    width: 18px;
+    height: 18px;
+}
+
+li span {
+    flex-grow: 1; /* Assure que le texte prend tout l’espace disponible */
+}
+
+#delete-completed {
+    margin-top: 20px;
+    background: #dc3545;
+}
+
+#delete-completed:hover {
+    background: #c82333;
+}
